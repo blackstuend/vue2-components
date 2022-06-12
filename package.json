@@ -1,29 +1,41 @@
 {
-  "name": "component",
-  "version": "0.1.0",
-  "private": true,
+  "name": "blackfloat-test-component",
+  "version": "0.1.3",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "webpack --config webpack.config.js",
+    "build:style": "webpack --config webpack.config-style.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "blackfloat-test-component": "^0.1.1",
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "node-sass": "^7.0.1",
+    "vue": "^2.6.14",
+    "webpack": "^5.73.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@iconify/vue2": "^1.2.1",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/compiler-sfc": "^3.2.37",
     "@vue/eslint-config-airbnb": "^6.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-vue": "^8.0.3",
     "eslint-plugin-vuejs-accessibility": "^1.1.0",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
-    "vue-template-compiler": "^2.6.14"
-  }
+    "style-loader": "^3.3.1",
+    "vue-loader": "^15.0.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "main": "dist/index.js"
 }
