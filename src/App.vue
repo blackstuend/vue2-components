@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <checkbox-item v-model="value">123</checkbox-item>
+    <a-item></a-item>
+    <b-item></b-item>
   </div>
 </template>
 

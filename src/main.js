@@ -1,10 +1,10 @@
 import Vue from 'vue';
-import Checkbox from '../dist/index';
 import App from './App.vue';
 
-Vue.config.productionTip = false;
+import component from './index';
 
-Vue.use(Checkbox);
+Vue.use(component);
+Vue.config.productionTip = false;
 
 new Vue({
   render: (h) => h(App),

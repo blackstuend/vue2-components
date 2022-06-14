@@ -8,11 +8,12 @@ module.exports = {
     filename: 'index.js',
     library: 'checkbox',
     libraryTarget: 'umd',
+    libraryExport: 'default',
   },
   optimization: {
     minimize: true, // 打包是否包裝
   },
-  target: ['web', 'es5'], // 打包成 es5, 讓 ie 也能使用
+  mode: 'none',
   module: {
     rules: [
       {
@@ -26,7 +27,11 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: path.resolve(__dirname, 'node_modules'),
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader',
       },
     ],
   },

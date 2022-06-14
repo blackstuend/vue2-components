@@ -1,7 +1,11 @@
-import Checkbox from './components/checkbox/Checkbox.vue';
+import A from './components/A.vue';
+import B from './components/B.vue';
 
-Checkbox.install = function (Vue) {
-  Vue.component('checkboxItem', Checkbox);
+export default {
+  A,
+  B,
+  install(Vue) {
+    Vue.component('AItem', A);
+    Vue.component('BItem', B);
+  },
 };
-
-export default Checkbox;
