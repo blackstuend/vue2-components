@@ -1,5 +1,5 @@
 <template>
-  <div class="text-primary">
+  <div class="a">
     A
     <svg><use xlink:href="#about" /></svg>
   </div>
@@ -13,3 +13,9 @@ export default {
   components: {},
 };
 </script>
+
+<style lang="scss" scoped>
+.a {
+  color: var(--primary);
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="text-primary">
+  <div class="b">
     B
     <svg><use xlink:href="#circle" /></svg>
   </div>
@@ -13,3 +13,9 @@ export default {
   components: {},
 };
 </script>
+
+<style lang="scss" scoped>
+.b {
+  color: var(--primary);
+}
+</style>
